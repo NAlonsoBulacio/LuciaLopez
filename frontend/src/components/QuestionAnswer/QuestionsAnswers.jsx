@@ -41,25 +41,12 @@ const QuestionsAnswersEnd = ({ landing, acne, bundle }) => {
     },
   ];
 
-
   const QAs = QAsDefault;
   return (
     <div
       id="q&a"
-      className={`w-full flex flex-wrap justify-center items-center gap-y-12 ${
-        landing ? "py-10" : "py-0"
-      }`}
+      className={`w-full flex flex-wrap justify-center items-center gap-y-12 py-10 px-4 lg:px-32`}
     >
-      {landing && (
-        <div className="w-full flex flex-wrap justify-center">
-          <h1 className="w-full text-center text-yellow-700 font-sans-400 text-xl">
-            Respuestas a tus preguntas
-          </h1>
-          <p className="w-full text-center text-gray-900 font-sans-500 text-4xl">
-            Preguntas frecuentes
-          </p>
-        </div>
-      )}
       <div className="w-full flex flex-wrap justify-start items-center space-y-2 max-w-[800px] pt-4">
         {QAs.map((qa, index) => (
           <div key={index}>
@@ -78,14 +65,18 @@ const QuestionsAnswersEnd = ({ landing, acne, bundle }) => {
                 <IoIosArrowDown
                   className="w-1/4 md:w-auto text-gray-700"
                   style={{
-                    transform: `rotate(${answer === qa.answer_id ? 180 : 0}deg)`,
+                    transform: `rotate(${
+                      answer === qa.answer_id ? 180 : 0
+                    }deg)`,
                     transition: "transform 0.5s",
                   }}
                 />
               </button>
             </div>
             <div
-              className={`w-full answer text-left ${answer === qa.answer_id ? "show" : ""}`}
+              className={`w-full answer text-left ${
+                answer === qa.answer_id ? "show" : ""
+              }`}
             >
               <span
                 className="w-full flex-grow text-left font-sans-300 text-gray-500 text-md lg:text-lg"
@@ -99,6 +90,16 @@ const QuestionsAnswersEnd = ({ landing, acne, bundle }) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="w-full flex justify-center">
+        <a
+          href="https://wa.me/+5492996302273"
+          target="_blank"
+          rel="noreferrer"
+          className="w-auto tracking-widest poppins-regular bg-[#111827] hover:bg-[#111827] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
+        >
+          QUIERO ASESORARME
+        </a>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const TherapyCard = ({
               <a
                 href={pdfLink}
                 download
-                className="absolute  bottom-10 mt-4 inline-block bg-white text-[#00314b] font-poppins py-2 px-4 rounded-full text-sm border border-[#00314b] hover:bg-[#00314b] hover:text-white transition"
+                className="absolute  bottom-10 mt-4 inline-block bg-white text-[#111827] font-poppins py-2 px-4 rounded-full text-sm border border-[#111827] hover:bg-[#111827] hover:text-white transition"
               >
                 Descargar PDF
               </a>

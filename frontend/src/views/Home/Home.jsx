@@ -13,18 +13,18 @@ const Home = () => {
     <div className="font-clash-400">
       <Header />
       <div className=" overflow-hidden">
-        <div className="relative w-screen h-screen">
+        <div className="relative w-screen h-[90vh] lg:h-screen">
           <img
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={dubai}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-          <div className="absolute inset-0 flex flex-col items-center justify-center pt-[360px]">
+          <div className="absolute -top-56 lg:-top-44 inset-0 flex flex-col items-center justify-center pt-[360px]">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
-              className="text-white text-6xl poppins-semibold text-center"
+              className="text-white text-4xl lg:text-6xl poppins-semibold text-center text-balance"
             >
               Cómo invertir en Dubái desde LATAM
             </motion.h1>
@@ -32,7 +32,7 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2 }}
-              className="text-gray-200 text-xl poppins-light-italic text-center mt-3"
+              className="text-gray-200 text-md lg:text-xl poppins-light-italic text-center mt-3 px-2"
             >
               Descubre cómo maximizar tu rentabilidad en el mercado inmobiliario
               más rentable del mundo.
@@ -46,7 +46,7 @@ const Home = () => {
                 href="https://wa.me/+5492996302273"
                 target="_blank"
                 rel="noreferrer"
-                className="uppercase poppins-regular bg-black hover:bg-[#00314b] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8"
+                className="uppercase poppins-regular bg-black hover:bg-[#111827] duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8"
               >
                 Agenda tu Llamada 1 a 1
               </a>

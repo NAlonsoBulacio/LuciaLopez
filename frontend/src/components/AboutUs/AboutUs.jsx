@@ -3,7 +3,7 @@ import { lucia } from "../../assets";
 import { motion } from "framer-motion";
 const AboutUsLucia = () => {
   return (
-    <div id="" className="bg-[#a1bcc9] py-16">
+    <div id="" className="bg-gray-100 py-16">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center">
         {/* Texto Descriptivo */}
         <motion.div

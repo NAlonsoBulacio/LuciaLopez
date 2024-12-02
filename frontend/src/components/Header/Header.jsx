@@ -48,10 +48,10 @@ const Header = () => {
           menuOpen ? "" : "border-b-[1px] border-gray-900"
         }`}
       >
-        <div className="mx-auto flex items-center justify-between lg:hidden z-30 ">
+        <div className="mx-auto flex items-center justify-between lg:hidden z-30  px-8">
           <div className="logo flex items-center space-x-4">
             <a href="/">
-              <h1>
+            <h1 className={`text-xl poppins-semibold uppercase tracking-widest leading-5`}>
                 Lucia
                 <br /> Lopez
               </h1>
@@ -70,7 +70,7 @@ const Header = () => {
         >
           <div className="logo flex items-center space-x-4">
             <a href="/">
-              <h1 className={`${navbar ? "text-[#00314b]" : ""} poppins-semibold uppercase tracking-widest`}>
+              <h1 className={`${navbar ? "text-gray-900" : ""} text-xl poppins-semibold uppercase tracking-widest leading-5`}>
                 Lucia
                 <br /> Lopez
               </h1>
@@ -119,7 +119,7 @@ const Header = () => {
             <div
               className={`${
                 navbar ? "text-gray-700 border-gray-700" : ""
-              } flex items-center border-[1px] hover:border-[#00314b] hover:text-[#00314b] duration-300 px-3 rounded-full`}
+              } flex items-center border-[1px] hover:border-[#111827] hover:text-[#111827] duration-300 px-3 rounded-full`}
             >
               <a
                 href="#therapys"
@@ -138,43 +138,29 @@ const Header = () => {
             animate={{ y: 0 }}
             exit={{ y: -340 }}
             transition={{ duration: 0.7 }}
-            className="fixed top-0 left-0 text-left w-full h-96 px-4 mt-10 bg-[#00314b] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
+            className="fixed top-0 left-0 text-left w-full h-96 px-10 mt-10 bg-[#111827] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
-            <a href="/" onClick={() => handleNavClick("/")} className="text-lg">
-              Bodyline
-            </a>
-            <a
-              href="#irene"
-              onClick={() => handleNavClick("/proyectos")}
-              className="text-lg"
-            >
-              Irene
-            </a>
-            <a
-              href="https://wa.me/+5492996302273"
-              target="_blank"
-              rel="noreferrer"
-              onClick={() => handleNavClick("/sobre-nosotros")}
-              className="text-lg"
-            >
-              Contacto
-            </a>
-            <a
-              href="#community"
-              onClick={() => handleNavClick("/contacto")}
-              className="text-lg"
-            >
-              Comunidad
-            </a>
+             <a href="/" className="block hover:text-gray-400">
+            Dubai
+          </a>
+          <a href="#lucia" className="block hover:text-gray-400">
+            Lucia Lopez
+          </a>
+          <a
+            href="https://wa.me/+5492996302273"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-gray-400"
+          >
+            Contacto
+          </a>
+          <a href="#testimonnials" className="block hover:text-gray-400">
+            Testimonios
+          </a>
+          <a href="#projects" className="block hover:text-gray-400">
+            Ver Proyectos
+          </a>
 
-            <div>
-              <a
-                href="#therapys"
-                className=" flex items-center gap-x-2 poppins-regular"
-              >
-                Ver todas las sesiones <GiThreeLeaves />
-              </a>
-            </div>
           </motion.div>
         )}
       </AnimatePresence>

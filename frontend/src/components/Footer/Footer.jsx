@@ -3,32 +3,39 @@ import { logo_vertical } from "../../assets"; // Asegúrate de importar tu logo 
 
 const Footer = () => {
   return (
-    <footer className="bg-[#00314b] text-white py-8">
-         <div className="flex items-center justify-center">
-          <img src={logo_vertical} alt="Logo" className="w-[200px]" />
-        </div>
+    <footer className="bg-[#111827] text-white py-8">
+      <h1
+        className={`text-gray-100 text-center text-xl poppins-semibold uppercase tracking-widest leading-5 mb-4`}
+      >
+        Lucia
+        <br /> Lopez
+      </h1>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center">
-       
-        <nav className="space-y-2 text-md poppins-semibold">
+        <nav className="space-y-2 text-md poppins-light text-center">
           <a href="/" className="block hover:text-gray-400">
-            Bodyline
+            Dubai
           </a>
-          <a href="#irene" className="block hover:text-gray-400">
-            Irene
+          <a href="#lucia" className="block hover:text-gray-400">
+            Lucia Lopez
           </a>
-          <a href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer" className="block hover:text-gray-400">
+          <a
+            href="https://wa.me/+5492996302273"
+            target="_blank"
+            rel="noreferrer"
+            className="block hover:text-gray-400"
+          >
             Contacto
           </a>
-          <a href="#community" className="block hover:text-gray-400">
-            Comunidad
+          <a href="#testimonnials" className="block hover:text-gray-400">
+            Testimonios
           </a>
-          <a href="#therapys" className="block hover:text-gray-400">
-            Ver todas las terapias
+          <a href="#projects" className="block hover:text-gray-400">
+            Ver Proyectos
           </a>
         </nav>
       </div>
       <div className="text-center mt-8 text-sm text-gray-400">
-        © 2024 Bodyline. Todos los derechos reservados.
+        © 2024 Lucia Lopez. Todos los derechos reservados.
       </div>
     </footer>
   );

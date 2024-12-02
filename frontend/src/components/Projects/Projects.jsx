@@ -57,10 +57,10 @@ const Projects = () => {
   return (
     <div id="therapys" className="py-20 bg-gray-100 px-2 lg:px-0">
       <div className="w-full flex flex-col items-center py-6">
-        <h1 className="text-3xl lg:text-4xl font-clash-400 text-[#00314b] text-center lg:text-left">
+        <h1 className="text-3xl lg:text-4xl font-clash-400 text-[#111827] text-center lg:text-left">
         Descubre las oportunidades disponibles hoy
         </h1>
-        <hr className="w-32 border-t-[3px] border-[#00314b] mt-2" />
+        <hr className="w-32 border-t-[3px] border-[#111827] mt-2" />
       </div>
       <div className="flex flex-wrap justify-center gap-8">
         {properties.map((property, index) => (
@@ -85,7 +85,7 @@ const Projects = () => {
       <div className="flex justify-center">
         <a
          href="https://wa.me/+5492996302273" target="_blank" rel="noreferrer"
-          className="w-auto tracking-widest poppins-regular bg-[#00314b] hover:bg-[#00314b] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
+          className="w-auto tracking-widest poppins-regular bg-[#111827] hover:bg-[#111827] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
         >
           QUIERO ASESORARME
         </a>
