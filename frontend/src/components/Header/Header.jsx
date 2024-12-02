@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { logo, logoB, logo_w } from "../../assets";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useLocation } from "react-router-dom";
-import { FaRegBuilding } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import { IoIosContacts } from "react-icons/io";
-import { GiThreeLeaves } from "react-icons/gi";
+import { FaBuilding } from "react-icons/fa";
 import "./Header.css";
 
 const Header = () => {
@@ -51,7 +48,9 @@ const Header = () => {
         <div className="mx-auto flex items-center justify-between lg:hidden z-30  px-8">
           <div className="logo flex items-center space-x-4">
             <a href="/">
-            <h1 className={`text-xl poppins-semibold uppercase tracking-widest leading-5`}>
+              <h1
+                className={`text-xl poppins-semibold uppercase tracking-widest leading-5`}
+              >
                 Lucia
                 <br /> Lopez
               </h1>
@@ -70,7 +69,11 @@ const Header = () => {
         >
           <div className="logo flex items-center space-x-4">
             <a href="/">
-              <h1 className={`${navbar ? "text-gray-900" : ""} text-xl poppins-semibold uppercase tracking-widest leading-5`}>
+              <h1
+                className={`${
+                  navbar ? "text-gray-900" : ""
+                } text-xl poppins-semibold uppercase tracking-widest leading-5`}
+              >
                 Lucia
                 <br /> Lopez
               </h1>
@@ -79,22 +82,22 @@ const Header = () => {
           <nav className="flex-grow flex justify-center space-x-10">
             <div className="text-md poppins-semibold space-x-10">
               <a
-                href="#bodyline"
+                href="/"
                 // onClick={() => handleNavClick("/proyectos")}
                 className={`${
                   currentPage === "/proyectos" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Bodyline
+                Dubai
               </a>
               <a
-                href="#irene"
+                href="#lucia"
                 // onClick={() => handleNavClick("/sobre-nosotros")}
                 className={`${
                   currentPage === "/sobre-nosotros" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Irene
+                Lucia Lopez
               </a>
               <a
                 href="#contact"
@@ -107,15 +110,17 @@ const Header = () => {
               </a>
 
               <a
-                href="#community"
+                href="#testimonnials"
                 onClick={() => handleNavClick("/novedades")}
                 className={`${
                   currentPage === "/novedades" ? "active" : "a-h"
                 } ${navbar ? "text-gray-700" : ""}`}
               >
-                Comunidad
+                Testimonios
               </a>
             </div>
+          </nav>
+          <div>
             <div
               className={`${
                 navbar ? "text-gray-700 border-gray-700" : ""
@@ -125,10 +130,10 @@ const Header = () => {
                 href="#therapys"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
-                Ver todas las sesiones <GiThreeLeaves />
+                Ver Proyectos <FaBuilding />
               </a>
             </div>
-          </nav>
+          </div>
         </div>
       </header>
       <AnimatePresence>
@@ -140,27 +145,26 @@ const Header = () => {
             transition={{ duration: 0.7 }}
             className="fixed top-0 left-0 text-left w-full h-96 px-10 mt-10 bg-[#111827] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
-             <a href="/" className="block hover:text-gray-400">
-            Dubai
-          </a>
-          <a href="#lucia" className="block hover:text-gray-400">
-            Lucia Lopez
-          </a>
-          <a
-            href="https://wa.me/+5492996302273"
-            target="_blank"
-            rel="noreferrer"
-            className="block hover:text-gray-400"
-          >
-            Contacto
-          </a>
-          <a href="#testimonnials" className="block hover:text-gray-400">
-            Testimonios
-          </a>
-          <a href="#projects" className="block hover:text-gray-400">
-            Ver Proyectos
-          </a>
-
+            <a href="/" className="block hover:text-gray-400">
+              Dubai
+            </a>
+            <a href="#lucia" className="block hover:text-gray-400">
+              Lucia Lopez
+            </a>
+            <a
+              href="https://wa.me/+5492996302273"
+              target="_blank"
+              rel="noreferrer"
+              className="block hover:text-gray-400"
+            >
+              Contacto
+            </a>
+            <a href="#testimonnials" className="block hover:text-gray-400">
+              Testimonios
+            </a>
+            <a href="#projects" className="block hover:text-gray-400">
+              Ver Proyectos <FaBuilding />
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
