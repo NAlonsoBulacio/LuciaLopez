@@ -42,7 +42,7 @@ const Header = () => {
             ? "header-bg lg:shadow-2xl h-[80px] lg:h-[80px]"
             : "header h-[80px] lg:h-[95px]"
         } text-gray-300 p-4 z-40 font-lato-300 fixed w-full top-0 transition-all duration-500  ${
-          menuOpen ? "" : "border-b-[1px] border-gray-900"
+          menuOpen ? "border-b-[1px] border-gray-100" : ""
         }`}
       >
         <div className="mx-auto flex items-center justify-between lg:hidden z-30  px-8">
@@ -127,7 +127,7 @@ const Header = () => {
               } flex items-center border-[1px] hover:border-[#111827] hover:text-[#111827] duration-300 px-3 rounded-full`}
             >
               <a
-                href="#therapys"
+                href="#projects"
                 className=" flex items-center gap-x-2 poppins-regular"
               >
                 Ver Proyectos <FaBuilding />
@@ -143,12 +143,12 @@ const Header = () => {
             animate={{ y: 0 }}
             exit={{ y: -340 }}
             transition={{ duration: 0.7 }}
-            className="fixed top-0 left-0 text-left w-full h-96 px-10 mt-10 bg-[#111827] text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
+            className="fixed top-0 left-0 text-left w-full h-80 px-10 mt-8 bg-[#111827]  border-gray-100 text-white poppins-semibold z-20 flex flex-col items-start justify-center space-y-4"
           >
-            <a href="/" className="block hover:text-gray-400">
+            <a href="/" className="poppins-regular block hover:text-gray-400">
               Dubai
             </a>
-            <a href="#lucia" className="block hover:text-gray-400">
+            <a href="#lucia" className="poppins-regular block hover:text-gray-400">
               Lucia Lopez
             </a>
             <a
@@ -159,12 +159,15 @@ const Header = () => {
             >
               Contacto
             </a>
-            <a href="#testimonnials" className="block hover:text-gray-400">
+            <a href="#testimonnials" className="poppins-regular block hover:text-gray-400">
               Testimonios
             </a>
-            <a href="#projects" className="block hover:text-gray-400">
-              Ver Proyectos <FaBuilding />
-            </a>
+            <a
+                href="#projects"
+                className=" flex items-center gap-x-2 poppins-regular"
+              >
+                Ver Proyectos <FaBuilding />
+              </a>
           </motion.div>
         )}
       </AnimatePresence>
