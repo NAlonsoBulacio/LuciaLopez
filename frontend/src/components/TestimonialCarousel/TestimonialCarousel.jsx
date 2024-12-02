@@ -26,30 +26,36 @@ const TestimonialCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
       {
-        breakpoint: 1024,
-        slidesToShow: 2,
+        breakpoint: 1024, // Para pantallas medianas y grandes
+        settings: {
+          slidesToShow: 2, // Mostrar dos slides
+        },
       },
       {
-        breakpoint: 600,
-        slidesToShow: 2,
+        breakpoint: 600, // Para pantallas pequeñas
+        settings: {
+          slidesToShow: 1, // Mostrar un slide
+        },
       },
       {
-        breakpoint: 480,
-        slidesToShow: 1,
+        breakpoint: 450, // Para pantallas pequeñas
+        settings: {
+          slidesToShow: 1, // Mostrar un slide
+        },
       },
     ],
   };
 
   return (
     <div className="py-12 px-4 lg:px-32 bg-gray-50">
-      <h2 className="text-3xl font-bold text-[#111827] text-center mb-8">
-        Historias de éxito: Lo que dicen nuestros clientes.
+      <h2 className="text-3xl font-semibold text-[#111827] text-center mb-8">
+        Historias de éxito: <span className="font-normal">Lo que dicen nuestros clientes.</span>
       </h2>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (

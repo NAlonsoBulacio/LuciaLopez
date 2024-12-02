@@ -64,7 +64,21 @@ const Home = () => {
         <Projects />
         <QuestionsAnswersEnd />
       </div>
-
+      <div className="w-full flex flex-wrap justify-center px-4 lg:px-32 py-6 lg:py-20 bg-gray-100">
+        <div className="w-full flex justify-center">
+          <h1 className="text-5xl poppins-semibold text-center text-balance">
+            Da el primer paso hacia una inversión segura y rentable
+          </h1>
+        </div>
+        <a
+          href="https://wa.me/+5492996302273"
+          target="_blank"
+          rel="noreferrer"
+          className="w-auto tracking-widest poppins-regular bg-[#111827] hover:bg-[#111827] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
+        >
+          Agenda tu Llamada Ahora
+        </a>
+      </div>
       <Footer />
     </div>
   );

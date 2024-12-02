@@ -91,16 +91,6 @@ const QuestionsAnswersEnd = ({ landing, acne, bundle }) => {
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-center">
-        <a
-          href="https://wa.me/+5492996302273"
-          target="_blank"
-          rel="noreferrer"
-          className="w-auto tracking-widest poppins-regular bg-[#111827] hover:bg-[#111827] hover:scale-90 duration-300 text-white px-3 py-2 rounded-3xl flex items-center justify-center gap-x-2 mt-8 shadow-lg"
-        >
-          QUIERO ASESORARME
-        </a>
-      </div>
     </div>
   );
 };
